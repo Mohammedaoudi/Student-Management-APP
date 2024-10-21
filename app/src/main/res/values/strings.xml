@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Student APP</string>
+    <string-array name="filieres">
+        <item>2ITE</item>
+        <item>ISIC</item>
+        <item>CCN</item>
+    </string-array>
+</resources>

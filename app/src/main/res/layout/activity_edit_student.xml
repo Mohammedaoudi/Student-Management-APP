@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:layout_margin="10dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Update Student"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        android:paddingBottom="16dp" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imageViewStudent"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:scaleType="centerCrop"
+        android:layout_gravity="center" />
+
+    <Button
+        android:id="@+id/buttonSelectImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose Image"
+        android:layout_gravity="center"
+        android:layout_marginTop="8dp" />
+
+    <EditText
+        android:id="@+id/editTextNom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nom" />
+
+    <EditText
+        android:id="@+id/editTextPrenom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Prénom" />
+
+    <EditText
+        android:id="@+id/editTextVille"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ville" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sexe:"
+        android:layout_marginTop="16dp" />
+
+    <RadioGroup
+        android:id="@+id/radioBtns"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp">
+
+        <RadioButton
+            android:id="@+id/radioMale"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="M"
+            android:layout_weight="1" />
+
+        <RadioButton
+            android:id="@+id/radioFemale"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="F"
+            android:layout_weight="1" />
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Filière:"
+        android:layout_marginTop="16dp" />
+
+    <Spinner
+        android:id="@+id/spinnerFiliere"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/filieres" />
+
+
+
+
+
+    <Button
+        android:id="@+id/buttonSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="save"
+        android:width="150dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="8dp" />
+</LinearLayout>
